@@ -18,7 +18,7 @@ namespace NLogTest
                 for (int i = 0; i < 30; i++)
                 {
                     logger.Info($"this is {i + 1} line");
-                    Thread.Sleep(500);
+                    //Thread.Sleep(500);
                 }
             }
             catch (Exception ex)
