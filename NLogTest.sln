@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLogTest", "NLogTest\NLogTest.csproj", "{384F0657-CA0B-43A3-9CCF-D3C14AE75F6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{3DBE8F0F-B7B1-42C6-B1D8-B26259095E48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{384F0657-CA0B-43A3-9CCF-D3C14AE75F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{384F0657-CA0B-43A3-9CCF-D3C14AE75F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{384F0657-CA0B-43A3-9CCF-D3C14AE75F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{384F0657-CA0B-43A3-9CCF-D3C14AE75F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DBE8F0F-B7B1-42C6-B1D8-B26259095E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DBE8F0F-B7B1-42C6-B1D8-B26259095E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DBE8F0F-B7B1-42C6-B1D8-B26259095E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DBE8F0F-B7B1-42C6-B1D8-B26259095E48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AB9A256A-3376-4D45-BA5C-F642E1818A18}
+	EndGlobalSection
+EndGlobal
