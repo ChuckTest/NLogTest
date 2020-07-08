@@ -31,7 +31,11 @@ namespace NLogTest
                     }
                 }
 
-                logger.Info($"this is a test log {DateTime.Now:yyyy-MM-dd HH:mm:ss.fff zzz}.");
+                Guid guid = Guid.NewGuid();
+                for (int i = 0; i < 1000; i++)
+                {
+                    logger.Info($"{guid}, this is a test log {DateTime.Now:yyyy-MM-dd HH:mm:ss.fff zzz}.");
+                }
             }
             catch (Exception ex)
             {
