@@ -13,8 +13,9 @@ namespace NLogTest
         {
             try
             {
+                InternalLogger.LogLevel = NLog.LogLevel.Error;
                 InternalLogger.LogMessageReceived += InternalLogger_LogMessageReceived;
-                for (int i = 0; i < 30; i++)
+                for (int i = 0; i < 100; i++)
                 {
                     logger.Info($"this is {i + 1} line");
                     Thread.Sleep(500);
@@ -26,10 +27,18 @@ namespace NLogTest
             }
         }
 
+        private static bool flag = false;
+
         private static void InternalLogger_LogMessageReceived(object sender, InternalLoggerMessageEventArgs e)
         {
+            if (!flag)
+            {
+                NLogEventLog lisaEventLog = new NLogEventLog();
+                var process = Process.GetCurrentProcess();
+                lisaEventLog.WriteEntry($"ProcessId = {process.Id}, {process.SessionId}", EventLogEntryType.Error);
+            }
             var exception = e.Exception;
-            if (exception != null && e.Level >= NLog.LogLevel.Error)
+            if (exception != null)
             {
                 var content = $"{e.Message}{Environment.NewLine},{e.Exception}";
                 NLogEventLog lisaEventLog = new NLogEventLog();
