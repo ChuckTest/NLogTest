@@ -13,6 +13,7 @@ namespace NLogTest
         {
             try
             {
+                InternalLogger.LogLevel = NLog.LogLevel.Error;
                 InternalLogger.LogMessageReceived += InternalLogger_LogMessageReceived;
                 for (int i = 0; i < 30; i++)
                 {
